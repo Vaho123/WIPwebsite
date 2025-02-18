@@ -1,0 +1,239 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   background-color: #2998cb;
+}
+
+header {
+   background-color: #041e5f;
+   color: #fff;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header .logo {
+   font-size: 1.8em;
+   font-weight: bold;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+}
+
+nav ul li {
+   margin-left: 20px;
+}
+
+nav ul li a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.1em;
+   padding: 5px 10px;
+}
+
+nav ul li a:hover {
+   border-bottom: 2px solid red; /* Red accent */
+}
+
+main {
+   padding: 20px;
+}
+
+section {
+   margin-bottom: 30px;
+}
+
+section h2 {
+   color: #333;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 25px;
+   margin-top: 20px;
+}
+
+.card {
+   background-color: #eaf7c7;
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow:0 4px 8px rgba(0, 0, 0, 0.8);
+   text-align: center;
+}
+
+.card h3 {
+   color: #333;
+}
+
+.hobbies-grid {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+
+.hobby-card {
+   background-color: #eaf7c7;
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow:0 4px 8px rgba(0, 0, 0, 0.8);
+   width: 31%;
+   text-align: center;
+}
+
+.hobby-card h3 {
+   color: #0609b0;
+}
+
+.image-container {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.image-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* This centers both the image and button */
+   text-align: center;
+}
+
+.image-item img {
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+   margin-bottom: 10px;
+}
+
+
+
+button {
+   background-color: #ff4d4d; /* Soft red */
+   border: none;
+   padding: 10px 20px; 
+   color: white;
+   border-radius: 5px;
+   cursor: pointer; 
+   margin-top: 15px; 
+}
+
+button:hover {
+   background-color: #870404d6;
+} 
+
+footer {
+   text-align: center;
+   padding: 20px;
+   background-color: #041e5f;
+   color: #fff;
+}
+
+form {
+   display: grid;
+   gap: 15px;
+   width: 300px;
+   margin: 0 auto;
+}
+
+form label {
+   font-size: 1.1em;
+   color: #333;
+}
+
+form input, form textarea {
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   font-size: 1em;
+}
+
+form button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+form button:hover {
+   background-color: #45a049;
+}
+
+.list-container {
+   list-style-type: none; /* Removes the default list bullets */
+   padding: 0;
+}
+
+.list-item {
+   position: relative;
+   display: inline-block;
+   margin: 5px;
+   margin-left: 10px;
+   columns: 3; /* This splits the content into 3 columns */
+   -webkit-columns: 3; /* For Webkit-based browsers (Safari, Chrome) */
+   -moz-columns: 3; /* For Firefox */
+   list-style-type: none; /* Optional: removes the bullet points */
+   padding: 10; /* Optional: removes padding for better layout */
+   text-align: center;
+   color:#0e3188
+}
+
+.hidden-image {
+   display: none;
+   position: absolute;
+   top: 0px;  /* Adjust this value to position the image below the text */
+   left: 55%;
+   transform: translateX(-50%);
+   width: 100px;  /* Adjust the image size */
+   height: 100px;
+   z-index: 1;
+}
+
+.hover-text {
+   font-size: 19px;
+   cursor: pointer;
+   color: #333;
+}
+
+.list-item:hover .hidden-image {
+   display: block;
+}
+
+
+.three-column-list {
+   columns: 5; /* This splits the content into 3 columns */
+   -webkit-columns: 5; /* For Webkit-based browsers (Safari, Chrome) */
+   -moz-columns: 5; /* For Firefox */
+   list-style-type: none; /* Optional: removes the bullet points */
+   padding: 0; /* Optional: removes padding for better layout */
+   text-align: center;
+   color: rgb(11, 4, 67);
+}
+
+.three-column-list li {
+   margin-top: 20px;
+   /* margin-bottom: 10px; Optional: adds spacing between list items */
+}
+
+
+.hidden {
+   display: none;
+}
+
+button {
+   margin: 10px;
+   padding: 10px;
+   font-size: 16px;
+}
