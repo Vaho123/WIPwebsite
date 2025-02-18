@@ -1,2 +1,0 @@
-# WIPwebsite
-A developing website
